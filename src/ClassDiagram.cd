@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Collision">
+    <Position X="21.146" Y="7.74" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Update">
+    <Position X="8.628" Y="5.583" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Alarms">
+    <Position X="12.359" Y="4.885" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Draw">
+    <Position X="12.484" Y="0.573" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Input">
+    <Position X="17.943" Y="1.229" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Camera">
+    <Position X="21.471" Y="1.062" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="GameObject">
+    <Position X="21.805" Y="2.802" Height="0.291" Width="0.95" />
+  </Comment>
+  <Comment CommentText="Sprite">
+    <Position X="24.18" Y="1.875" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Collision">
+    <Position X="16.271" Y="7.281" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Asset Managers">
+    <Position X="0.958" Y="9.812" Height="0.292" Width="1.106" />
+  </Comment>
+  <Comment CommentText="Scene">
+    <Position X="7.409" Y="1.239" Height="0.291" Width="0.7" />
+  </Comment>
+  <Class Name="MithrilEngine">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <Members>
+      <Method Name="~MithrilEngine" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAAwEAAAAAAAhQAAAAAAQAYAAgAEAAAAc=</HashCode>
+      <FileName>EngineCode\MithrilEngine.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="self" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SceneManager">
+    <Position X="5.5" Y="1.25" Width="1.75" />
+    <Members>
+      <Method Name="~SceneManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privChangeScene" Hidden="true" />
+      <Method Name="privDrawDrawables" Hidden="true" />
+      <Method Name="privGetCurrentScene" Hidden="true" />
+      <Method Name="privSetNextScene" Hidden="true" />
+      <Method Name="privTerminate" Hidden="true" />
+      <Method Name="privUpdateUpdatables" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAQAMAAAAABkkgJAAAAQAABgIKACEAcAAlAAAAAgQ=</HashCode>
+      <FileName>EngineCode\SceneManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="self" />
+      <Field Name="currentScene" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Scene">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~Scene" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="Scene" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CAQQEAAAAAAkAxAAgAAEACAAQAQBAACAAgAkQEEAAAA=</HashCode>
+      <FileName>EngineCode\Scene.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="UpdateMgr" />
+      <Field Name="DrawMgr" />
+      <Field Name="AlarmMgr" />
+      <Field Name="InputMgr" />
+      <Field Name="ColMgr" />
+      <Field Name="sceneBroker" />
+      <Field Name="camMgr" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DrawableManager">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~DrawableManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAAAEAAAAAAAABAAAAIAAABAAAABAAAAAAAwAAAAAAA=</HashCode>
+      <FileName>EngineCode\DrawableManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InputableManager">
+    <Position X="14.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="~InputableManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="InputableManager::KeyObjectList" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\InputableManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAgAAAAAABAAAAIAgAAAAAABAAAAAAAgAEBAAAA=</HashCode>
+      <FileName>EngineCode\InputableManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionManager">
+    <Position X="15.5" Y="4.25" Width="1.5" />
+    <Members>
+      <Method Name="~CollisionManager" Hidden="true" />
+      <Method Name="CollisionManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gAAAAAACIAAAwAAAAAAAAAAEAAAAAAAAAIAAgACAAAQ=</HashCode>
+      <FileName>EngineCode\CollisionManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AlarmableManager">
+    <Position X="11.25" Y="5.25" Width="1.5" />
+    <Members>
+      <Method Name="~AlarmableManager" Hidden="true" />
+      <Method Name="AlarmableManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CAAAEAAAAAAAABAAAAIAEAAAAAIBAAEAAAAgAAEAAAA=</HashCode>
+      <FileName>EngineCode\AlarmableManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpdatableManager">
+    <Position X="7.25" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="~UpdatableManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="UpdatableManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAAAEAAAAAAAABAAAAIAEAAAAgABAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>EngineCode\UpdatableManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollidableGroup&lt;C&gt;">
+    <Position X="17.25" Y="4.25" Width="1.5" />
+    <Members>
+      <Method Name="~CollidableGroup" Hidden="true" />
+      <Method Name="CollidableGroup" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privDeregister" Hidden="true" />
+      <Method Name="privRegister" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Typedef Name="CollidableGroup&lt;C&gt;::CollidableCollection" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\CollidableGroup.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAEAAgAAAAEAQAABQAgEBgAJAAAAYAAkAEAAAQA=</HashCode>
+      <FileName>EngineCode\CollidableGroup.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="self" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CameraManager">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~CameraManager" Hidden="true" />
+      <Method Name="CameraManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAEAAIABAgAAAAAAAAAAAIAAAAAAAAkAAAgAAA=</HashCode>
+      <FileName>EngineCode\CameraManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentCamera" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alarmable">
+    <Position X="13" Y="5.25" Width="1.5" />
+    <Members>
+      <Method Name="~Alarmable" Hidden="true" />
+      <Method Name="Alarmable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="Alarmable::RegistrationState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\Alarmable.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="Alarmable::RegistrationData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\Alarmable.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CRAAAAAAAAAUAAAAIBAQACAAABAAAAAAAGBgIAECAAI=</HashCode>
+      <FileName>EngineCode\Alarmable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Updatable">
+    <Position X="9" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="~Updatable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="Updatable" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="Updatable::RegistrationState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\Updatable.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAIAAAAAABYAACAAAAAAAAAAAEAFAgIAAAAAM=</HashCode>
+      <FileName>EngineCode\Updatable.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="regCmd" />
+      <Field Name="dregCmd" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UpdateRegistrationCommand" Collapsed="true">
+    <Position X="6.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIQAAAAAAAAAAAAAAAAAAAAgAABAAAg=</HashCode>
+      <FileName>EngineCode\UpdateRegistrationCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpdateDeregistrationCommand" Collapsed="true">
+    <Position X="6.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAQAAgAAAAAAAAAAAAAAAAAgAAAAAAg=</HashCode>
+      <FileName>EngineCode\UpdateDeregistrationCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Drawable">
+    <Position X="12.5" Y="1" Width="1.5" />
+    <Members>
+      <Method Name="~Drawable" Hidden="true" />
+      <Method Name="Drawable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="Drawable::RegistrationState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\Drawable.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAABIAgAAgABYAACBAAAAAAAAAAAgEAgIAAAAAI=</HashCode>
+      <FileName>EngineCode\Drawable.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="regCmd" />
+      <Field Name="dregCmd" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DrawRegistrationCommand" Collapsed="true">
+    <Position X="10" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEBAAAAAAQAAAAAAAAAAAAAAAgAAAAgAAAAAAA=</HashCode>
+      <FileName>EngineCode\DrawRegistrationCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DrawDeregistrationCommand" Collapsed="true">
+    <Position X="10" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAIAAAAQAAAgAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>EngineCode\DrawDeregistrationCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Camera" Collapsed="true">
+    <Position X="22.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AHgiQUUQoAYgkCRGQBQAgwiygQqK2xBsglgAZAIC6Uw=</HashCode>
+      <FileName>G:\Program Files\Perforce\Spring2017\berthiaume2017spring_gam377\student\eyanez\Sprint 9\Mithril Engine\dist\AzulCore\include\Camera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObject">
+    <Position X="20" Y="2.75" Width="1.5" />
+    <Members>
+      <Method Name="~GameObject" Hidden="true" />
+      <Method Name="GameObject" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="GameObject::RegistrationState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\GameObject.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAABAAAgAABQAAAAABAAAAAAAAABIAgAIIAAAA=</HashCode>
+      <FileName>EngineCode\GameObject.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pRegCmd" />
+      <Field Name="pDeregCmd" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameObjectEntryCommand" Collapsed="true">
+    <Position X="22.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAABAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAQ=</HashCode>
+      <FileName>EngineCode\GameObjectEntryCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObjectExitCommand" Collapsed="true">
+    <Position X="22.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAQAAAAAAAAAAAAABAAAIAAgAAAAAAA=</HashCode>
+      <FileName>EngineCode\GameObjectExitCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sprite">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~Sprite" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="Sprite" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>wIAEEQAgAIAAEAAA0QIAABoCAAAgAAAQABAgwEAAEAI=</HashCode>
+      <FileName>EngineCode\Sprite.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pSpriteModel" />
+      <Field Name="pSpriteShader" />
+      <Field Name="pSpriteImage" />
+      <Field Name="pSpriteObject" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Image" Collapsed="true">
+    <Position X="27.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAABAAAAABIAAAAAAEAAAAA=</HashCode>
+      <FileName>G:\Program Files\Perforce\Spring2017\berthiaume2017spring_gam377\student\eyanez\Sprint 9\Mithril Engine\dist\AzulCore\include\Image.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model" Collapsed="true">
+    <Position X="27.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQgAAbAACIARgEAAgAAAEIEAAAgAICAACAgAAAQUABA=</HashCode>
+      <FileName>G:\Program Files\Perforce\Spring2017\berthiaume2017spring_gam377\student\eyanez\Sprint 9\Mithril Engine\dist\AzulCore\include\Model.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GraphicsObject_Sprite" Collapsed="true">
+    <Position X="27.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABQAAQAAAAAAgAAQAAAAAgAQAAgCIQAAAAAAI=</HashCode>
+      <FileName>G:\Program Files\Perforce\Spring2017\berthiaume2017spring_gam377\student\eyanez\Sprint 9\Mithril Engine\dist\AzulCore\include\GraphicsObject_Sprite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShaderObject" Collapsed="true">
+    <Position X="27.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAACAAAAAAAAAAAAAAAAAABAABAAAAAAAKAAAAA=</HashCode>
+      <FileName>G:\Program Files\Perforce\Spring2017\berthiaume2017spring_gam377\student\eyanez\Sprint 9\Mithril Engine\dist\AzulCore\include\ShaderObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyObject">
+    <Position X="16.25" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="~KeyObject" Hidden="true" />
+      <Method Name="KeyObject" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AMAAAAAAAAAAAgQBAAAEAAQBAAAAAAAAAABgAAgAAQA=</HashCode>
+      <FileName>EngineCode\KeyObject.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="key" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CollisionDeregistrationCommand&lt;C&gt;" Collapsed="true">
+    <Position X="17" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAQAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EngineCode\CollisionDeregistrationCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionRegistrationCommand&lt;C&gt;" Collapsed="true">
+    <Position X="17" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAQAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EngineCode\CollisionRegistrationCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Collidable">
+    <Position X="15" Y="7.75" Width="1.5" />
+    <Members>
+      <Method Name="~Collidable" Hidden="true" />
+      <Method Name="Collidable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="Collidable::CollisionType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\Collidable.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Collidable::RegistrationState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\Collidable.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>JgAAAAIAAIEAIAgBAAACKAAAEAAAAAAAgCAgAAAAAAA=</HashCode>
+      <FileName>EngineCode\Collidable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionVolumeBSphere">
+    <Position X="19" Y="8.25" Width="1.5" />
+    <Members>
+      <Method Name="~CollisionVolumeBSphere" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABgAEAAACAAAAAAAAAIEAIAAIAAAAAAAgAABAAgIIAA=</HashCode>
+      <FileName>EngineCode\CollisionVolumeBSphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ImageManager">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <Members>
+      <Method Name="~ImageManager" Hidden="true" />
+      <Method Name="ImageManager" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privGetImage" Hidden="true" />
+      <Method Name="privLoadImage" Hidden="true" />
+      <Method Name="privUnloadImages" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAgAAEBAAAAAAEIAAAQCQAQAAAAAAAAQAAgAAAAAAA=</HashCode>
+      <FileName>EngineCode\ImageManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="self" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ModelManager">
+    <Position X="4" Y="7.75" Width="1.5" />
+    <Members>
+      <Method Name="~ModelManager" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="ModelManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privGetModel" Hidden="true" />
+      <Method Name="privLoadDefaultModels" Hidden="true" />
+      <Method Name="privLoadModel" Hidden="true" />
+      <Method Name="privUnloadModels" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABCACAASEAARAIAAAAAAAAAQAAQAAgAAAAABA=</HashCode>
+      <FileName>EngineCode\ModelManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="self" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ShaderManager">
+    <Position X="2.25" Y="10.25" Width="1.5" />
+    <Members>
+      <Method Name="~ShaderManager" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privGetShader" Hidden="true" />
+      <Method Name="privLoadDefaultShaders" Hidden="true" />
+      <Method Name="privLoadShader" Hidden="true" />
+      <Method Name="privUnloadShaders" Hidden="true" />
+      <Method Name="ShaderManager" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="ShaderManager::DefaultShader" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\ShaderManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAICQAUAAAAAAAAAAAAAgABAQABgACBAIAA=</HashCode>
+      <FileName>EngineCode\ShaderManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="self" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TextureManager">
+    <Position X="4" Y="10.25" Width="1.5" />
+    <Members>
+      <Method Name="~TextureManager" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privGetTexture" Hidden="true" />
+      <Method Name="privLoadDefaultTextures" Hidden="true" />
+      <Method Name="privLoadTexture" Hidden="true" />
+      <Method Name="privUnloadTextures" Hidden="true" />
+      <Method Name="TextureManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAAEAAACAAIAAgEIpAAAAAAQBAAAAAAAQAAgAAAAAAA=</HashCode>
+      <FileName>EngineCode\TextureManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="self" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MathTools">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACgBAIAACAAAAAAEAAAAAAAgAAAIgACAQAAAAII=</HashCode>
+      <FileName>EngineCode\MathTools.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Visualizer">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="~Visualizer" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privCreateBSphere" Hidden="true" />
+      <Method Name="privRenderBSphere" Hidden="true" />
+      <Method Name="Visualizer" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Struct Name="Visualizer::VisualizerData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\Visualizer.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Visualizer::VisualizerTerrainCell" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\Visualizer.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACCAAJBAQCIAAAEAAAAAAAAAgBAKAAAg5EAkACAgIAA=</HashCode>
+      <FileName>EngineCode\Visualizer.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="self" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FreezeTime">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="~FreezeTime" Hidden="true" />
+      <Method Name="FreezeTime" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAQAAgAAAAAgAAAgAAAAAAAAAAAgAAIQAgAAAAAAA=</HashCode>
+      <FileName>EngineCode\FreezeTime.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimeManager">
+    <Position X="0.75" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="~TimeManager" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privGetFrameTime" Hidden="true" />
+      <Method Name="privGetTimeSeconds" Hidden="true" />
+      <Method Name="privProcessTime" Hidden="true" />
+      <Method Name="TimeManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BACAgAABAAACAAEAAAAgAgQAAAAAAASAQAEgAACAAAA=</HashCode>
+      <FileName>EngineCode\TimeManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="self" />
+      <Field Name="FrzTime" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SceneRegistrationBroker" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAACIAAAAAAAQAAACEIAAAAgAAAAAAg=</HashCode>
+      <FileName>EngineCode\SceneRegistrationBroker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionTestSelfCommand&lt;C1&gt;" Collapsed="true">
+    <Position X="24.25" Y="8.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAQAAAAAAAAAABAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>EngineCode\CollisionTestSelfCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionTestPairCommand&lt;C1, C2&gt;" Collapsed="true">
+    <Position X="24.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAQAAAAAAAAQABAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>EngineCode\CollisionTestPairCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionVolumeOBB">
+    <Position X="22.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAABAAAAI0AAAAAAIAAAAAgEAAQQCAAAA=</HashCode>
+      <FileName>EngineCode\CollisionVolumeOBB.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollisionVolumeAABB">
+    <Position X="20.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oEAAAAAAQAAAAAADAAoUAAEAAAIAAEgAgEABUQCAAAA=</HashCode>
+      <FileName>EngineCode\CollisionVolumeAABB.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrainManager">
+    <Position X="8" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAQAAAEAAAAAAAAAAAAAAAgSAAAEIA=</HashCode>
+      <FileName>EngineCode\TerrainManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentTerrain" />
+      <Field Name="nullObject" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TerrainObject">
+    <Position X="10.25" Y="12" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="TerrainObject::TerrainCell" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\TerrainObject.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAGIBBAKAEBAAQAAQAAAQARAAAQQAhAwRAEAARA=</HashCode>
+      <FileName>EngineCode\TerrainObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NullTerrainObject" Collapsed="true">
+    <Position X="10.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAABAgAAAAQAA=</HashCode>
+      <FileName>EngineCode\NullTerrainObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrainObjectManager">
+    <Position X="6.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggABAAAAAAIAAEAAAAAECAAAAACAAAAQAAggQAAAAA=</HashCode>
+      <FileName>EngineCode\TerrainObjectManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="AZUL_KEY" Collapsed="true">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UgBAAToLAZCiAIgxQarlVAQqJcX/IACA0WmZWAHAYjU=</HashCode>
+      <FileName>G:\Program Files\Perforce\Spring2017\berthiaume2017spring_gam377\student\eyanez\Sprint 9\Mithril Engine\dist\AzulCore\include\Keyboard.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

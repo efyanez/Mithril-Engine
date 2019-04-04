@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInitialize.cpp">
+      <Filter>Application\User Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadResources.cpp">
+      <Filter>Application\User Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Application\MithrilEngine\Resource Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderManager.cpp">
+      <Filter>Application\MithrilEngine\Resource Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Application\MithrilEngine\Resource Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Application\MithrilEngine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Application\MithrilEngine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Application\MithrilEngine\User Base Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandBase.cpp">
+      <Filter>Application\MithrilEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRegistrationBroker.cpp">
+      <Filter>Application\MithrilEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Application\User Files\Ship</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletFactory.cpp">
+      <Filter>Application\User Files\Ship</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Application\User Files\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyFactory.cpp">
+      <Filter>Application\User Files\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemySpawner.cpp">
+      <Filter>Application\User Files\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Frigate.cpp">
+      <Filter>Application\User Files\Ship</Filter>
+    </ClCompile>
+    <ClCompile Include="Axis.cpp">
+      <Filter>Application\User Files\Static Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Application\User Files\Static Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Alarmable.cpp">
+      <Filter>Application\MithrilEngine\User Base Classes\Alarms</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmEnum.cpp">
+      <Filter>Application\MithrilEngine\User Base Classes\Alarms</Filter>
+    </ClCompile>
+    <ClCompile Include="Inputable.cpp">
+      <Filter>Application\MithrilEngine\User Base Classes\Inputables</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable.cpp">
+      <Filter>Application\MithrilEngine\User Base Classes\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="MithrilEngine.cpp">
+      <Filter>Application\MithrilEngine\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Updatable.cpp">
+      <Filter>Application\MithrilEngine\User Base Classes\Updatable</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyObject.cpp">
+      <Filter>Application\MithrilEngine\User Base Classes\Inputables</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Application\MithrilEngine\Resource Managers\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="FreezeTime.cpp">
+      <Filter>Application\MithrilEngine\Resource Managers\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstScene.cpp">
+      <Filter>Application\User Files\User Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SecondScene.cpp">
+      <Filter>Application\User Files\User Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Application\User Files\Static Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="TimedEnemySpawner.cpp">
+      <Filter>Application\User Files\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmDeregistrationCommand.cpp">
+      <Filter>Application\MithrilEngine\Commands\AlarmCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmRegistrationCommand.cpp">
+      <Filter>Application\MithrilEngine\Commands\AlarmCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawDeregistrationCommand.cpp">
+      <Filter>Application\MithrilEngine\Commands\DrawCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawRegistrationCommand.cpp">
+      <Filter>Application\MithrilEngine\Commands\DrawCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectEntryCommand.cpp">
+      <Filter>Application\MithrilEngine\Commands\GameObjectCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectExitCommand.cpp">
+      <Filter>Application\MithrilEngine\Commands\GameObjectCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyEventDeregistrationCommand.cpp">
+      <Filter>Application\MithrilEngine\Commands\KeyEventCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyEventRegistrationCommand.cpp">
+      <Filter>Application\MithrilEngine\Commands\KeyEventCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateDeregistrationCommand.cpp">
+      <Filter>Application\MithrilEngine\Commands\UpdateCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateRegistrationCommand.cpp">
+      <Filter>Application\MithrilEngine\Commands\UpdateCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionRegistrationCommand.cpp">
+      <Filter>Application\MithrilEngine\Commands\CollisionCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDeregistrationCommand.cpp">
+      <Filter>Application\MithrilEngine\Commands\CollisionCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="Collidable.cpp">
+      <Filter>Application\MithrilEngine\User Base Classes\Collidables</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmableManager.cpp">
+      <Filter>Application\MithrilEngine\x-Able Managers\AlarmableManager</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawableManager.cpp">
+      <Filter>Application\MithrilEngine\x-Able Managers\DrawableManager</Filter>
+    </ClCompile>
+    <ClCompile Include="InputableManager.cpp">
+      <Filter>Application\MithrilEngine\x-Able Managers\InputableManager</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdatableManager.cpp">
+      <Filter>Application\MithrilEngine\x-Able Managers\UpdatableManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CollidableGroup.cpp">
+      <Filter>Application\MithrilEngine\x-Able Managers\CollidableGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="CollidableGroupBase.cpp">
+      <Filter>Application\MithrilEngine\x-Able Managers\CollidableGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>Application\MithrilEngine\x-Able Managers\CollidableGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionVolume.cpp">
+      <Filter>Application\MithrilEngine\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionVolumeBSphere.cpp">
+      <Filter>Application\MithrilEngine\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualizer.cpp">
+      <Filter>Application\MithrilEngine\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp">
+      <Filter>Application\MithrilEngine\Resource Managers\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="GodCamera.cpp">
+      <Filter>Application\MithrilEngine\Engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{1392bc0c-ded2-42a7-9ec1-333be4dadedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{aef3393e-06a5-4f08-bf4a-3b6be12d1e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW">
+      <UniqueIdentifier>{d22a518f-dd11-48ea-8247-bd82c5928233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\include">
+      <UniqueIdentifier>{f1613e77-99f1-482b-bccf-12b6784f3aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\lib">
+      <UniqueIdentifier>{c350b52d-8efa-4eca-a258-d57d45c43245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6">
+      <UniqueIdentifier>{189a2178-2765-49df-b052-8eca24a60d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\lib">
+      <UniqueIdentifier>{841af908-0674-4949-8aa0-292e3e84a88b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\include">
+      <UniqueIdentifier>{d2f5d78b-d9cf-4bd9-bd4e-df7522de593c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File">
+      <UniqueIdentifier>{fb44cdb2-f236-4b3b-833e-e9e2c3af59cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\lib">
+      <UniqueIdentifier>{23abe339-ce80-4523-b0f0-23747e3f512f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\include">
+      <UniqueIdentifier>{323b20aa-e08c-4260-84b1-1e85121a9e17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math">
+      <UniqueIdentifier>{9fcc2c9b-3e4f-4ab2-a0c5-3099cdf90300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\lib">
+      <UniqueIdentifier>{ea7cbe8f-1aeb-4ad2-bd4e-fa300408bd5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\include">
+      <UniqueIdentifier>{5d126765-1977-4213-89fb-e004f6468da5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore">
+      <UniqueIdentifier>{d3f91089-c7e6-474d-8376-afd372d35a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\lib">
+      <UniqueIdentifier>{8a854cfc-9294-4797-b476-0b2feacdd62f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\include">
+      <UniqueIdentifier>{60eabb98-a714-4df4-8fa1-3fb92ea55bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine">
+      <UniqueIdentifier>{f30d398a-3a9b-490f-ab66-d78262991733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\User Files">
+      <UniqueIdentifier>{51b48457-16ca-48dd-ae70-70551499428e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Resource Managers">
+      <UniqueIdentifier>{3fb3420c-64a7-487e-945e-445b9f21bd53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Scene">
+      <UniqueIdentifier>{6c878be2-ef8d-46fd-a404-a1789c7a41fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\User Base Classes">
+      <UniqueIdentifier>{5806babc-433c-44eb-8ade-ec8a52b617c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\x-Able Managers">
+      <UniqueIdentifier>{4c70a211-19c5-4a0a-a298-f2e3cd0f417a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Commands">
+      <UniqueIdentifier>{6c7e5408-0ac8-45d9-a6f5-539eabbbb163}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\User Files\Ship">
+      <UniqueIdentifier>{22215eb7-36c0-46d6-aa1b-34c6505580a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\User Files\Enemy">
+      <UniqueIdentifier>{6351a20b-2165-4101-8452-eb48fa4acada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\User Files\Static Objects">
+      <UniqueIdentifier>{16cacea3-99f6-431d-aa02-7d8c325bc6ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\User Base Classes\Alarms">
+      <UniqueIdentifier>{1c867b0f-6c4f-416a-b898-24262e5a35b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\User Base Classes\Inputables">
+      <UniqueIdentifier>{2bc0dd71-a725-4d39-82e1-c164eae12824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\User Base Classes\Drawables">
+      <UniqueIdentifier>{d428db22-aeed-4d2f-a33a-05362e6a3733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Engine">
+      <UniqueIdentifier>{8d2020d1-0481-466f-9999-f848b148f235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\User Base Classes\Updatable">
+      <UniqueIdentifier>{00d4a47e-cc40-466f-afb0-49170ea3e60b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Resource Managers\Time">
+      <UniqueIdentifier>{ed4e3726-a997-479c-952a-db322aa2cc5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\User Files\User Scenes">
+      <UniqueIdentifier>{d583cc2c-4151-4a35-8ac3-dbe39e877234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\User Base Classes\Collidables">
+      <UniqueIdentifier>{44494eba-0ec1-4343-a676-00f8f35fc284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Commands\AlarmCommands">
+      <UniqueIdentifier>{7725f57d-0416-43c7-8855-9264a76f801a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Commands\DrawCommands">
+      <UniqueIdentifier>{c79791de-c1c5-4e0c-938a-b889ec311c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Commands\GameObjectCommands">
+      <UniqueIdentifier>{14e5fe61-7aa6-4d7d-9b60-034e1e6f06aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Commands\KeyEventCommands">
+      <UniqueIdentifier>{245397a2-3f2e-487b-89b9-0caf6633b728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Commands\UpdateCommands">
+      <UniqueIdentifier>{86133a05-7df7-4e23-a3bd-e22476ff76ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Commands\CollisionCommands">
+      <UniqueIdentifier>{7f8b85dc-2404-4948-b941-aaa786975b65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\x-Able Managers\AlarmableManager">
+      <UniqueIdentifier>{4659b052-5e4f-44b4-8b76-fb4ddf20ea52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\x-Able Managers\DrawableManager">
+      <UniqueIdentifier>{8758afe0-e89e-4b14-b607-838a9fdfdb49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\x-Able Managers\InputableManager">
+      <UniqueIdentifier>{291109ab-6971-492d-a708-6c389286dd3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\x-Able Managers\UpdatableManager">
+      <UniqueIdentifier>{b1ad6afe-4f99-402b-9490-2b381330e14e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\x-Able Managers\CollidableGroup">
+      <UniqueIdentifier>{e8b659e1-a1ee-4938-b634-1d0a56c1e684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Collision">
+      <UniqueIdentifier>{7ec90c56-1722-495a-9116-f73e40ac761f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\MithrilEngine\Resource Managers\Camera">
+      <UniqueIdentifier>{33e658e1-db0b-4ef2-b016-95a0e5659876}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h">
+      <Filter>_Libs\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\arcball.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\object.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\shader.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\vmath.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\gl3w.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glcorearb.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glxext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\wglext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\File\include\File.h">
+      <Filter>_Libs\File\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Align16.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Constants.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Enum.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathEngine.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Matrix.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Util.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Vect.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Image.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Model.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Quat.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\QuatApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\VectApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>Application\MithrilEngine\Resource Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderManager.h">
+      <Filter>Application\MithrilEngine\Resource Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Application\MithrilEngine\Resource Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Application\MithrilEngine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Application\MithrilEngine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Application\MithrilEngine\User Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandBase.h">
+      <Filter>Application\MithrilEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRegistrationBroker.h">
+      <Filter>Application\MithrilEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Application\User Files\Ship</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletFactory.h">
+      <Filter>Application\User Files\Ship</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Application\User Files\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyFactory.h">
+      <Filter>Application\User Files\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemySpawner.h">
+      <Filter>Application\User Files\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Frigate.h">
+      <Filter>Application\User Files\Ship</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis.h">
+      <Filter>Application\User Files\Static Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Application\User Files\Static Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Alarmable.h">
+      <Filter>Application\MithrilEngine\User Base Classes\Alarms</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmEnum.h">
+      <Filter>Application\MithrilEngine\User Base Classes\Alarms</Filter>
+    </ClInclude>
+    <ClInclude Include="Inputable.h">
+      <Filter>Application\MithrilEngine\User Base Classes\Inputables</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>Application\MithrilEngine\User Base Classes\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="MithrilEngine.h">
+      <Filter>Application\MithrilEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Updatable.h">
+      <Filter>Application\MithrilEngine\User Base Classes\Updatable</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyObject.h">
+      <Filter>Application\MithrilEngine\User Base Classes\Inputables</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Application\MithrilEngine\Resource Managers\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="FreezeTime.h">
+      <Filter>Application\MithrilEngine\Resource Managers\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="FirstScene.h">
+      <Filter>Application\User Files\User Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SecondScene.h">
+      <Filter>Application\User Files\User Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Application\User Files\Static Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="TimedEnemySpawner.h">
+      <Filter>Application\User Files\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Collidable.h">
+      <Filter>Application\MithrilEngine\User Base Classes\Collidables</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmDeregistrationCommand.h">
+      <Filter>Application\MithrilEngine\Commands\AlarmCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmRegistrationCommand.h">
+      <Filter>Application\MithrilEngine\Commands\AlarmCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawDeregistrationCommand.h">
+      <Filter>Application\MithrilEngine\Commands\DrawCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawRegistrationCommand.h">
+      <Filter>Application\MithrilEngine\Commands\DrawCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectEntryCommand.h">
+      <Filter>Application\MithrilEngine\Commands\GameObjectCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectExitCommand.h">
+      <Filter>Application\MithrilEngine\Commands\GameObjectCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyEventDeregistrationCommand.h">
+      <Filter>Application\MithrilEngine\Commands\KeyEventCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyEventRegistrationCommand.h">
+      <Filter>Application\MithrilEngine\Commands\KeyEventCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateDeregistrationCommand.h">
+      <Filter>Application\MithrilEngine\Commands\UpdateCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateRegistrationCommand.h">
+      <Filter>Application\MithrilEngine\Commands\UpdateCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionRegistrationCommand.h">
+      <Filter>Application\MithrilEngine\Commands\CollisionCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDeregistrationCommand.h">
+      <Filter>Application\MithrilEngine\Commands\CollisionCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmableManager.h">
+      <Filter>Application\MithrilEngine\x-Able Managers\AlarmableManager</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableManager.h">
+      <Filter>Application\MithrilEngine\x-Able Managers\DrawableManager</Filter>
+    </ClInclude>
+    <ClInclude Include="InputableManager.h">
+      <Filter>Application\MithrilEngine\x-Able Managers\InputableManager</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdatableManager.h">
+      <Filter>Application\MithrilEngine\x-Able Managers\UpdatableManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionTestSelfCommand.h">
+      <Filter>Application\MithrilEngine\Commands\CollisionCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="CollidableGroup.h">
+      <Filter>Application\MithrilEngine\x-Able Managers\CollidableGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="CollidableGroupBase.h">
+      <Filter>Application\MithrilEngine\x-Able Managers\CollidableGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>Application\MithrilEngine\x-Able Managers\CollidableGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionTestPairCommand.h">
+      <Filter>Application\MithrilEngine\Commands\CollisionCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionVolume.h">
+      <Filter>Application\MithrilEngine\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionVolumeBSphere.h">
+      <Filter>Application\MithrilEngine\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualizer.h">
+      <Filter>Application\MithrilEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorLibrary.h">
+      <Filter>Application\MithrilEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h">
+      <Filter>Application\MithrilEngine\Resource Managers\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="GodCamera.h">
+      <Filter>Application\MithrilEngine\Resource Managers\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="MathTools.h">
+      <Filter>Application\MithrilEngine\Engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib">
+      <Filter>_Libs\GLFW\lib</Filter>
+    </Library>
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib">
+      <Filter>_Libs\SB6\lib</Filter>
+    </Library>
+    <Library Include="..\dist\File\lib\File_Debug.lib">
+      <Filter>_Libs\File\lib</Filter>
+    </Library>
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib">
+      <Filter>_Libs\Math\lib</Filter>
+    </Library>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib">
+      <Filter>_Libs\AzulCore\lib</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

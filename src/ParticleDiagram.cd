@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ParticleEmitter">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABJAAAAoCgACAAQAAAAAAAABAABABgAAAAAKE=</HashCode>
+      <FileName>EngineCode\ParticleEmitter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParticleEffect">
+    <Position X="3.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABABAEAgCAEAAAJAAAAgAAUgQCESCIQAAAFBACAA=</HashCode>
+      <FileName>EngineCode\ParticleEffect.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentEmitter" />
+      <Field Name="currentPattern" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ParticleEffectPulse">
+    <Position X="0.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQABEAAAAAAAAAAAAAAgAIAAQ=</HashCode>
+      <FileName>EngineCode\ParticleEffectPulse.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParticleEffectSphericalBurst">
+    <Position X="3" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQABEAAAAAAAAAAAAAAgAIACA=</HashCode>
+      <FileName>EngineCode\ParticleEffectSphericalBurst.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParticleEffectStream">
+    <Position X="5.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQABEAAAAAAAAAAABAAgAIAAA=</HashCode>
+      <FileName>EngineCode\ParticleEffectStream.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Burst">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="Burst::Particle" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EngineCode\Burst.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IAQQEAAAAAAAAAACAIAAAAIkgAEAAAkAAARgAAAAAgE=</HashCode>
+      <FileName>EngineCode\Burst.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentBurstType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BurstType">
+    <Position X="15.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAACAAAAAAAAAAAAAAAgAIAAAAA=</HashCode>
+      <FileName>EngineCode\BurstType.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurstTypePulse">
+    <Position X="13.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAgAAQAAAA=</HashCode>
+      <FileName>EngineCode\BurstTypePulse.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurstTypeSpherical">
+    <Position X="15.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAgAAAAAABAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>EngineCode\BurstTypeSpherical.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurstTypeStream">
+    <Position X="17.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>EngineCode\BurstTypeStream.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="BurstPattern">
+    <Position X="5.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAIAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>EngineCode\BurstPattern.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
